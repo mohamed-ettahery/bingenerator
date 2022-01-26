@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Checkgen</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="icon" type="image/png" href="images/favicon.png"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.php">Checkgen</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+<!--
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">HELP</a>
+                </li>
+
+            </ul>
+-->
+           <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-instagram"></i></a>
+                </li>
+
+            </ul>
+        </div>
+     </nav>
+        <div class="myContent">
+            <h1 class="text-center">Credit Card Numbers Generator</h1>
+            <h5 class="text-center">get a random credit card for testing</h5>
+            <div class="container form-box">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="form">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label>BIN</label>
+                                    <input type="text" class="form-control" id="inpt-bin" placeholder="12345"/>
+                                </div>
+                                <div class="col-6">
+                                    <label>MONTH</label>
+                                    <select class="form-control" id="slct-months">
+                                        <option>Random</option>
+                                        <option>01</option>
+                                        <option>02</option>
+                                    </select>
+                                </div>
+                                <div class="col-6">
+                                    <label>YEAR</label>
+                                    <select class="form-control" id="slct-years">
+                                        <option>Random</option>
+                                        <option>21</option>
+                                        <option>22</option>
+                                        <option>23</option>
+                                        <option>24</option>
+                                        <option>25</option>
+                                        <option>26</option>
+                                        <option>27</option>
+                                        <option>28</option>
+                                    </select>
+                                </div>
+                                <div class="col-6">
+                                    <label>CVV</label>
+                                    <input type="text" class="form-control" placeholder="leave blank" disabled/>
+                                </div>
+                                <div class="col-6">
+                                    <label>QUANTITY</label>
+                                    <input type="number" id="inpt-qte" class="form-control" value="10" />
+                                </div>
+                                <div class="col-12">
+<!--                                    <input type="button" class="btn btn-success btn-block" value="Generate"/>-->
+                                    <button class="btn btn-success btn-block" id="btn-generate"><i style="margin-right: 5px"  class="fa fa-cogs"></i>Generate</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="result-box">
+                            <label>RESULT</label>
+                            <div id="affDiv" class="resDiv">XXXXXXXXXXXXXXXX | MM | YY | CVV</div>
+                            <button class="copy-all">Select All<i class="fa fa-book"></i></button>
+                            <button class="clear-all">Clear<i class="fa fa-config"></i></button>
+                            <p class="msg-after-click" id="testo">is Cleared</p>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+        <footer class="text-center">
+            <div class="container">
+               <div><span class="footer-brand">Checkgen</span> - Copyright &copy; 2021-<span id="copyright-year">2021</span></div>
+            </div>
+        </footer>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/backend.js"></script>
+<!--        <script src="https://drive.google.com/file/d/1REmmCWeP_jIGKnHVRBMILQ2p6lF9WWsk/view?usp=sharing"></script>-->
+</body>
